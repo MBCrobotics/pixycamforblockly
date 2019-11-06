@@ -6,8 +6,8 @@
     }
 }(function(scope) {
     'use strict';
-    var UART_MESSAGE = [0x04, 0x24];
-    var UARTEvent = {
+    var pixycam_MESSAGE = [0x04, 0x24];
+    var pixycamEvent = {
         READ: 'read',
         READ_ERROR: 'readError'
     };
@@ -27,18 +27,18 @@
     var string = '';
     var list = [];
     var readCallback = function() {}
-    UART.prototype = proto = Object.create(Module.prototype, {
+    pixycam.prototype = proto = Object.create(Module.prototype, {
         constructor: {
-            value: UART
+            value: pixycam
         }
     });
 
-    function UART(board, rate) {
+    function pixycam(board, rate) {
         Module.call(this);
         self = this;
         this._board = board;
         self._messageHandler = onMessage.bind(this);
-        //console.log("start UART: baud 9600");
+        //console.log("start pixycam: baud 9600");
         board.on(BoardEvent.SYSEX_MESSAGE, self._messageHandler);
         var setBaudRate = [0xF0, 0x04, 0x24, baudRate[rate] /*init*/ , 0xF7];
         board.send(setBaudRate);
@@ -46,14 +46,14 @@
 
     function onMessage(event) {
         var message = event.message;
-        if (message[0] !== UART_MESSAGE[0] || message[1] !== UART_MESSAGE[1]) {
+        if (message[0] !== pixycam_MESSAGE[0] || message[1] !== pixycam_MESSAGE[1]) {
             return;
         } else {
-            processUARTData(this, message);
+            processpixycamData(this, message);
         }
     }
 
-    function processUARTData(self, data) {
+    function processpixycamData(self, data) {
         var rxData = [];
         if (data[2] == 11 /*rx*/ ) {
             var rawData = data.slice(3);
@@ -93,5 +93,5 @@
         readCallback = callback;
     }
 
-    scope.module.UART = UART;
+    scope.module.pixycam = pixycam;
 }));
