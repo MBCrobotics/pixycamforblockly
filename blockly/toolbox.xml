@@ -1,0 +1,23 @@
+<category id="catpixycam" tags="mark1,fly,smart">
+    <block type="variables_set">
+        <field name="VAR">pixycam</field>
+        <value name="VALUE">
+            <block type="pixycam_new">
+            </block>
+        </value>
+    </block>
+    <block type="pixycam_tx">
+    </block>
+    <block type="pixycam_tx_x">
+    </block>
+    <block type="pixycam_tx_y">
+    </block>
+    <block type="pixycam_tx_w">
+    </block>
+    <block type="pixycam_tx_h">
+    </block>
+    <block type="pixycam_rx">
+    </block>
+    <block type="pixycam_data">
+    </block>
+</category>

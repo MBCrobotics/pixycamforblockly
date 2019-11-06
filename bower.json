@@ -1,0 +1,19 @@
+{
+  "name": "webduino-module-pixycam",
+  "description": "pixycam Module for Webduino",
+  "main": "pixycam.js",
+  "authors": "",
+  "license": "MIT",
+  "keywords": [
+    "arduino",
+    "webduino",
+    "pixycam"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

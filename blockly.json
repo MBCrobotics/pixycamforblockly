@@ -1,0 +1,25 @@
+{
+    "types": [
+
+	"pixycam_new",
+	"pixycam_tx_x",
+	"pixycam_tx_y",
+	"pixycam_tx_w",
+	"pixycam_tx_h",
+	"pixycam_rx",
+	"pixycam_data"
+
+],
+    "category": "catMenu2",
+    "scripts": [
+        "blockly/blocks.js",
+        "blockly/javascript.js"
+    ],
+    "dependencies": [
+        "pixycam.js",
+        "pixycam-blockly.js"
+    ],
+    "msg": "blockly/msg",
+    "blocksMsg": "blockly/msg/blocks",
+    "toolbox": "blockly/toolbox.xml"
+}
