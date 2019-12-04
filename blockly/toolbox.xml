@@ -7,20 +7,19 @@
         </value>
     </block>
     
-    <block type="variables_set">
-        <field name="VAR">PIXY_X</field>
-        <value name="VALUE">
-            <block type="">
-            </block>
-        </value>
-    </block>
-    
     <block type="pixycam_rx">
     </block>
     <block type="pixycam_data">
     </block>
-    <block type="pixycam_x">
+    
+        <block type="variables_set">
+        <field name="VAR">PIXY_X</field>
+        <value name="VALUE">
+            <block type="pixycam_x">
+            </block>
+        </value>
     </block>
+    
     <block type="pixycam_y">
     </block>
     <block type="pixycam_w">
