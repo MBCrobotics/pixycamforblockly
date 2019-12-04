@@ -12,10 +12,10 @@ Blockly.Blocks['pixycam_new'] = {
     }
 };
 
-Blockly.Blocks['pixycam_tx_x'] = {
+Blockly.Blocks['pixycam_x'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("X座標");
+        .appendField("物件X座標");
     this.setOutput(true, null);
     this.setColour(230);
  this.setTooltip("");
@@ -23,10 +23,10 @@ Blockly.Blocks['pixycam_tx_x'] = {
   }
 };
 
-Blockly.Blocks['pixycam_tx_y'] = {
+Blockly.Blocks['pixycam_y'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("Y座標");
+        .appendField("物件Y座標");
     this.setOutput(true, null);
     this.setColour(230);
  this.setTooltip("");
@@ -34,10 +34,10 @@ Blockly.Blocks['pixycam_tx_y'] = {
   }
 };
 
-Blockly.Blocks['pixycam_tx_w'] = {
+Blockly.Blocks['pixycam_w'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("寬度");
+        .appendField("物件寬度");
     this.setOutput(true, null);
     this.setColour(230);
  this.setTooltip("");
@@ -45,10 +45,43 @@ Blockly.Blocks['pixycam_tx_w'] = {
   }
 };
 
-Blockly.Blocks['pixycam_tx_h'] = {
+Blockly.Blocks['pixycam_h'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("高度");
+        .appendField("物件高度");
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['pixycam_r'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("物件紅色值");
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['pixycam_g'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("物件綠色值");
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['pixycam_b'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("物件藍色值");
     this.setOutput(true, null);
     this.setColour(230);
  this.setTooltip("");
