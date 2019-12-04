@@ -10,7 +10,7 @@
     <block type="variables_set">
         <field name="VAR">PIXY_X</field>
         <value name="VALUE">
-            <block type="pixycam_new">
+            <block type="">
             </block>
         </value>
     </block>
