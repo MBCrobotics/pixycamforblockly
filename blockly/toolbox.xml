@@ -6,20 +6,6 @@
             </block>
         </value>
         
-       <field name="VAR">PIXY_B</field>
-        
-        <field name="VAR">PIXY_Y</field>
-        
-        <field name="VAR">PIXY_W</field>
-        
-        <field name="VAR">PIXY_H</field>
-        
-        <field name="VAR">PIXY_R</field>
-        
-        <field name="VAR">PIXY_G</field>
-        
-        <field name="VAR">PIXY_X</field>
-        
     </block>
     <block type="pixycam_rx">
     </block>
