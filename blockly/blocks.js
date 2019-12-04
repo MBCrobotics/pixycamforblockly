@@ -76,13 +76,16 @@ Blockly.Blocks['pixycam_data'] = {
     init: function() {
         this.appendDummyInput()
             .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
-            .appendField("取得資料")
+            .appendField("資料分析")
             .appendField(new Blockly.FieldDropdown([
                 ["string", "string"]
             ]), "dataType");
-        this.setOutput(true, null);
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
         this.setColour(75);
         this.setTooltip("");
         this.setHelpUrl("");
     }
 };
+
+
