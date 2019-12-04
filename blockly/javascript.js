@@ -13,21 +13,21 @@ Blockly.JavaScript['pixycam_new'] = function(block) {
     return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
 
-Blockly.JavaScript['pixycam_tx_x'] = function(block) {
+Blockly.JavaScript['pixycam_x'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   var code = '\'X'\';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
-Blockly.JavaScript['pixycam_tx_y'] = function(block) {
+Blockly.JavaScript['pixycam_y'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   var code = PIXY_Y;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
-Blockly.JavaScript['pixycam_tx_w'] = function(block) {
+Blockly.JavaScript['pixycam_w'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   var code = PIXY_W;
   // TODO: Change ORDER_NONE to the correct strength.
@@ -37,6 +37,27 @@ Blockly.JavaScript['pixycam_tx_w'] = function(block) {
 Blockly.JavaScript['pixycam_tx_h'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   var code = PIXY_H;
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['pixycam_r'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = PIXY_R;
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['pixycam_g'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = PIXY_G;
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['pixycam_b'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = PIXY_B;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
