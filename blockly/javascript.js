@@ -1,10 +1,3 @@
-var PIXY_X=0;
-var PIXY_Y=0;
-var PIXY_W=0;
-var PIXY_H=0;
-var PIXY_R=0;
-var PIXY_G=0;
-var PIXY_B=0;
 
 // https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#dwe33p
 Blockly.JavaScript['pixycam_new'] = function(block) {
