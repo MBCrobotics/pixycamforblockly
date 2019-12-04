@@ -12,20 +12,6 @@ Blockly.Blocks['pixycam_new'] = {
     }
 };
 
-Blockly.Blocks['pixycam_tx'] = {
-    init: function() {
-        this.appendValueInput("pixycam_data")
-            .setCheck(null)
-            .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
-            .appendField(Blockly.Msg.WEBDUINO_pixycam_TX, "傳送資料")
-        this.setPreviousStatement(true, null);
-        this.setNextStatement(true, null);
-        this.setColour(75);
-        this.setTooltip("");
-        this.setHelpUrl("");
-    }
-};
-
 Blockly.Blocks['pixycam_tx_x'] = {
   init: function() {
     this.appendDummyInput()
@@ -92,7 +78,7 @@ Blockly.Blocks['pixycam_data'] = {
             .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
             .appendField("取得資料")
             .appendField(new Blockly.FieldDropdown([
-                ["list", "list"]
+                ["string", "string"]
             ]), "dataType");
         this.setOutput(true, null);
         this.setColour(75);
