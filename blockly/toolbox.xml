@@ -5,8 +5,7 @@
             <block type="pixycam_new">
             </block>
         </value>
-        
-
+       
         
     </block>
     <block type="pixycam_rx">
