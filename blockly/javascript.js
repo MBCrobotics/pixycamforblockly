@@ -10,12 +10,13 @@ Blockly.JavaScript['pixycam_x'] = function(block) {
   
     var variable_pixycam = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('pixycam'), Blockly.Variables.NAME_TYPE);
     var code = variable_pixycam + '.' + "string";
-    var PIXY_X=code%1000;
-    /*if(code>=1000 && code<2000){
-        PIXY_X=code%1000;
+    var data=parseInt(code)%1000;
+    var PIXY_X=0;
+    if(data>=1000 && data<2000){
+        PIXY_X=data%1000;
     }*/
   // TODO: Change ORDER_NONE to the correct strength.
-  return [code , Blockly.JavaScript.ORDER_NONE];
+  return [PIXY_X , Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['pixycam_y'] = function(block) {
