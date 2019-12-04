@@ -6,7 +6,7 @@
             </block>
         </value>
         
-       <field name="VAR">PIXY_X</field>
+       <field name="VAR">PIXY_B</field>
         
         <field name="VAR">PIXY_Y</field>
         
@@ -18,7 +18,7 @@
         
         <field name="VAR">PIXY_G</field>
         
-        <field name="VAR">PIXY_B</field>
+        <field name="VAR">PIXY_X</field>
         
     </block>
     <block type="pixycam_rx">
