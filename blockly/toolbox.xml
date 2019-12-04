@@ -6,18 +6,22 @@
             </block>
         </value>
     </block>
-    <block type="pixycam_tx">
-    </block>
-    <block type="pixycam_tx_x">
-    </block>
-    <block type="pixycam_tx_y">
-    </block>
-    <block type="pixycam_tx_w">
-    </block>
-    <block type="pixycam_tx_h">
-    </block>
     <block type="pixycam_rx">
     </block>
     <block type="pixycam_data">
+    </block>
+    <block type="pixycam_x">
+    </block>
+    <block type="pixycam_y">
+    </block>
+    <block type="pixycam_w">
+    </block>
+    <block type="pixycam_h">
+    </block>
+    <block type="pixycam_r">
+    </block>
+    <block type="pixycam_g">
+    </block>
+    <block type="pixycam_b">
     </block>
 </category>
