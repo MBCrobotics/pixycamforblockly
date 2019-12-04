@@ -5,8 +5,16 @@
             <block type="pixycam_new">
             </block>
         </value>
-        
     </block>
+    
+    <block type="variables_set">
+        <field name="VAR">PIXY_X</field>
+        <value name="VALUE">
+            <block type="pixycam_new">
+            </block>
+        </value>
+    </block>
+    
     <block type="pixycam_rx">
     </block>
     <block type="pixycam_data">
