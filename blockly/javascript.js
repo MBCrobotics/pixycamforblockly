@@ -91,6 +91,8 @@ Blockly.JavaScript['pixycam_data'] = function(block) {
     }else if(code>=1000){
         PIXY_X=code%1000;
     }
+    code = variable_pixycam + '.rx(';
+    code += "async function () {\n" + statements_rx + "});\n";
     return code;
 };
 
