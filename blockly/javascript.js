@@ -13,14 +13,6 @@ Blockly.JavaScript['pixycam_new'] = function(block) {
     return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
 
-//https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#4bu9f9
-Blockly.JavaScript['pixycam_tx'] = function(block) {
-    var variable_pixycam = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('pixycam'), Blockly.Variables.NAME_TYPE);
-    var value_pixycam_data = Blockly.JavaScript.valueToCode(block, 'pixycam_data', Blockly.JavaScript.ORDER_ATOMIC);
-    var code = variable_pixycam + '.tx(' + value_pixycam_data + ');\n';
-    return code;
-};
-
 Blockly.JavaScript['pixycam_tx_x'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   var code = '\'X'\';
