@@ -1,3 +1,11 @@
+var PIXY_X=0;
+var PIXY_Y=0;
+var PIXY_W=0;
+var PIXY_H=0;
+var PIXY_R=0;
+var PIXY_G=0;
+var PIXY_B=0;
+
 // https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#dwe33p
 Blockly.JavaScript['pixycam_new'] = function(block) {
     var dropdown_baud_rate = block.getFieldValue('baud_rate');
@@ -15,28 +23,28 @@ Blockly.JavaScript['pixycam_tx'] = function(block) {
 
 Blockly.JavaScript['pixycam_tx_x'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = '\'X\'';
+  var code = PIXY_X;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['pixycam_tx_y'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = '\'Y\'';
+  var code = PIXY_Y;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['pixycam_tx_w'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = '\'W\'';
+  var code = PIXY_W;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['pixycam_tx_h'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = '\'H\'';
+  var code = PIXY_H;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
