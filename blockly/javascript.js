@@ -9,9 +9,9 @@ Blockly.JavaScript['pixycam_new'] = function(block) {
 Blockly.JavaScript['pixycam_x'] = function(block) {
   
     var variable_pixycam = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('pixycam'), Blockly.Variables.NAME_TYPE);
-    //var code = variable_pixycam + '.' + "string";
-    console.log('variable_pixycam : ' + variable_pixycam);
-    var data=parseInt(variable_pixycam);
+    var code = variable_pixycam.getFieldValue('string');
+    console.log('code : ' + code);
+    var data=parseInt(code);
     console.log('data : ' + data);
     var PIXY_X=0;
     if(data>=1000 && data<2000){
