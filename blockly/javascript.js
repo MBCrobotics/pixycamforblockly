@@ -14,7 +14,7 @@ Blockly.JavaScript['pixycam_x'] = function(block) {
     var PIXY_X=0;
     if(data>=1000 && data<2000){
         PIXY_X=data%1000;
-    }*/
+    }
   // TODO: Change ORDER_NONE to the correct strength.
   return [PIXY_X , Blockly.JavaScript.ORDER_NONE];
 };
