@@ -15,7 +15,7 @@ Blockly.JavaScript['pixycam_x'] = function(block) {
         PIXY_X=code%1000;
     }*/
   // TODO: Change ORDER_NONE to the correct strength.
-  return [PIXY_X , Blockly.JavaScript.ORDER_NONE];
+  return [code , Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['pixycam_y'] = function(block) {
