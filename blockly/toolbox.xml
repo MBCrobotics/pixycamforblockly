@@ -5,6 +5,49 @@
             <block type="pixycam_new">
             </block>
         </value>
+        
+        <field name="VAR">PIXY_X</field>
+        <value name="VALUE">
+            <block type="PIXY_X_new">
+            </block>
+        </value>
+        
+        <field name="VAR">PIXY_Y</field>
+        <value name="VALUE">
+            <block type="PIXY_Y_new">
+            </block>
+        </value>
+        
+        <field name="VAR">PIXY_W</field>
+        <value name="VALUE">
+            <block type="PIXY_W_new">
+            </block>
+        </value>
+        
+        <field name="VAR">PIXY_H</field>
+        <value name="VALUE">
+            <block type="PIXY_H_new">
+            </block>
+        </value>
+        
+        <field name="VAR">PIXY_R</field>
+        <value name="VALUE">
+            <block type="PIXY_R_new">
+            </block>
+        </value>
+        
+        <field name="VAR">PIXY_G</field>
+        <value name="VALUE">
+            <block type="PIXY_G_new">
+            </block>
+        </value>
+        
+        <field name="VAR">PIXY_B</field>
+        <value name="VALUE">
+            <block type="PIXY_B_new">
+            </block>
+        </value>
+        
     </block>
     <block type="pixycam_rx">
     </block>
