@@ -8,13 +8,8 @@ Blockly.JavaScript['pixycam_new'] = function(block) {
 
 Blockly.JavaScript['pixycam_x'] = function(block) {
   
-    console.log(block.getFieldValue('pixycam'));
-    console.log(Blockly.Variables.NAME_TYPE);
-    console.log(Blockly.JavaScript.variableDB_.getName(block.getFieldValue('pixycam'), Blockly.Variables.NAME_TYPE));
     var variable_pixycam = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('pixycam'), Blockly.Variables.NAME_TYPE);
-    //console.log(variable_pixycam);
-    var dropdown_dataType = "string";
-    var code = variable_pixycam + '.' + dropdown_dataType;
+    var code = variable_pixycam + '.' + "string";
     var PIXY_X=0;
     if(code>=1000 && code<2000){
         PIXY_X=code%1000;
