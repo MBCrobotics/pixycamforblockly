@@ -6,6 +6,35 @@ Blockly.JavaScript['pixycam_new'] = function(block) {
     return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
 
+let PIXY_X=0;
+let PIXY_Y=0;
+let PIXY_W=0;
+let PIXY_H=0;
+let PIXY_R=0;
+let PIXY_G=0;
+let PIXY_B=0;
+
+//https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#
+Blockly.JavaScript['pixycam_ansys'] = function(block) {
+  var value_rawdata = Blockly.JavaScript.valueToCode(block, 'pixycam_rawdata', Blockly.JavaScript.ORDER_ATOMIC);
+    if(value_rawdata>=7000)
+        PIXY_X=value_rawdata % 1000;
+    else if(value_rawdata>=6000)
+        PIXY_Y=value_rawdata % 1000;
+    else if(value_rawdata>=5000)
+        PIXY_W=value_rawdata % 1000;
+    else if(value_rawdata>=4000)
+        PIXY_H=value_rawdata % 1000;
+    else if(value_rawdata>=3000)
+        PIXY_R=value_rawdata % 1000;
+    else if(value_rawdata>=2000)
+        PIXY_G=value_rawdata % 1000;
+    else if(value_rawdata>=1000)
+        PIXY_B=value_rawdata % 1000;
+
+    return ;
+};
+
 Blockly.JavaScript['pixycam_rawdata'] = function(block) {
   
     var variable_pixycam_rawdata = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('pixycam'), Blockly.Variables.NAME_TYPE);
@@ -80,26 +109,5 @@ Blockly.JavaScript['pixycam_rx'] = function(block) {
     return code;
 };
 
-//https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#d9sohf
-Blockly.JavaScript['pixycam_data'] = function(block) {
-    var variable_pixycam = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('pixycam'), Blockly.Variables.NAME_TYPE);
-    //var dropdown_dataType = block.getFieldValue('dataType');
-    var code = variable_pixycam + '.' + "string";
-    if(code>=7000){
-        code=code%1000;
-    }else if(code>=6000){
-        code=code%1000;
-    }else if(code>=5000){
-        code=code%1000;
-    }else if(code>=4000){
-        code=code%1000;
-    }else if(code>=3000){
-        code=code%1000;
-    }else if(code>=2000){
-        code=code%1000;
-    }else if(code>=1000){
-        code=code%1000;
-    }
-    return [code, Blockly.JavaScript.ORDER_NONE];
-};
+
 
