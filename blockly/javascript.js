@@ -6,7 +6,7 @@ Blockly.JavaScript['pixycam_new'] = function(block) {
     return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
 
-let PIXY_X='(PIXYCAM_RAWDATA>=1000 && PIXYCAM_RAWDATA<2000)?PIXYCAM_RAWDATA%1000';
+let PIXY_X='(PIXYCAM_RAWDATA>=1000 && PIXYCAM_RAWDATA<2000)?PIXYCAM_RAWDATA%1000:PIXYCAM_X';
 let PIXY_Y=222;
 let PIXY_W=333;
 let PIXY_H=444;
