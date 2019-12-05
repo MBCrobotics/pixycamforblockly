@@ -18,28 +18,42 @@ let PIXY_B=777;
 Blockly.JavaScript['pixycam_ansys'] = function(block) {
     console.log('start :1 ');
    var variable_pixy = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('pixycam'), Blockly.Variables.NAME_TYPE);
+    console.log('start :pixycam_1 : ' + block.getFieldValue('pixycam'));
+    console.log('start :pixycam_2 : ' + Blockly.Variables.NAME_TYPE);
+    console.log('start :pixycam_3 : ' + variable_pixy);
     console.log('start :2 ');
     var value_uart_data = Blockly.JavaScript.valueToCode(block, 'rawdata', Blockly.JavaScript.ORDER_ATOMIC);
+    console.log('start :rawdata_1 : ' + block);
+    console.log('start :rawdata_2 : ' + 'rawdata');
+    console.log('start :rawdata_3 : ' + Blockly.JavaScript.ORDER_ATOMIC);
     console.log('start :3 ');
     var code = variable_pixy + '.ansys(' + value_uart_data + ');\n';
     console.log('start :4 ');
     var value_rawdata = Blockly.JavaScript.valueToCode(block, 'rawdata', Blockly.JavaScript.ORDER_ATOMIC);
     console.log('start :5 ');
     //console.log('final : '+value_rawdata + ' : ' + PIXY_X);
-    if(value_rawdata>=7000)
+    if(value_rawdata>=7000){
          PIXY_X=value_rawdata % 1000;
-    else if(value_rawdata>=6000)
+        console.log(PIXY_X);
+    }else if(value_rawdata>=6000){
          PIXY_Y=value_rawdata % 1000;
-    else if(value_rawdata>=5000)
+        console.log(PIXY_Y);
+    }else if(value_rawdata>=5000){
          PIXY_W=value_rawdata % 1000;
-    else if(value_rawdata>=4000)
+        console.log(PIXY_W);
+    }else if(value_rawdata>=4000){
          PIXY_H=value_rawdata % 1000;
-    else if(value_rawdata>=3000)
+        console.log(PIXY_H);
+    }else if(value_rawdata>=3000){
          PIXY_R=value_rawdata % 1000;
-    else if(value_rawdata>=2000)
+        console.log(PIXY_R);
+    }else if(value_rawdata>=2000){
          PIXY_G=value_rawdata % 1000;
-    else if(value_rawdata>=1000)
+        console.log(PIXY_G);
+    }else if(value_rawdata>=1000){
          PIXY_B=value_rawdata % 1000;
+        console.log(PIXY_B);
+    }
     //console.log('final_1 : '+value_rawdata + ' : ' + PIXY_X);
     console.log('start :6 ');
     return code;
