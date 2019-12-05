@@ -22,36 +22,60 @@
     </block>
     
 <block type="variables_set">
-        <field name="VAR">PIXYCAM_X座標</field>
+        <field name="VAR">pixy_X</field>
         <value name="VALUE">
             <block type="pixycam_x">
             </block>
         </value>
     </block>
 
+<block type="variables_set">
+        <field name="VAR">pixy_Y</field>
+        <value name="VALUE">
             <block type="pixycam_y">
             </block>
+        </value>
+    </block>
 
-
+<block type="variables_set">
+        <field name="VAR">pixy_W</field>
+        <value name="VALUE">
             <block type="pixycam_w">
             </block>
+        </value>
+    </block>
 
 
+<block type="variables_set">
+        <field name="VAR">pixy_H</field>
+        <value name="VALUE">
             <block type="pixycam_h">
             </block>
+        </value>
+    </block>
 
 
+<block type="variables_set">
+        <field name="VAR">pixy_R</field>
+        <value name="VALUE">
             <block type="pixycam_r">
             </block>
+        </value>
+    </block>
 
     
 
+<block type="variables_set">
+        <field name="VAR">pixy_G</field>
+        <value name="VALUE">
             <block type="pixycam_g">
             </block>
+        </value>
+    </block>
 
     
     <block type="variables_set">
-      <field name="VAR">PIXY_B</field>
+      <field name="VAR">pixy_B</field>
         <value name="VALUE">
             <block type="pixycam_b">
             </block>
