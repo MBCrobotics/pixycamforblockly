@@ -6,15 +6,6 @@ Blockly.JavaScript['pixycam_new'] = function(block) {
     return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
 
-let PIXY_X='(PIXYCAM_RAWDATA>=1000 && PIXYCAM_RAWDATA<2000)?PIXYCAM_RAWDATA%1000:pixy_X';
-let PIXY_Y='(PIXYCAM_RAWDATA>=2000 && PIXYCAM_RAWDATA<3000)?PIXYCAM_RAWDATA%1000:pixy_Y';
-let PIXY_W='(PIXYCAM_RAWDATA>=3000 && PIXYCAM_RAWDATA<4000)?PIXYCAM_RAWDATA%1000:pixy_W';
-let PIXY_H='(PIXYCAM_RAWDATA>=4000 && PIXYCAM_RAWDATA<5000)?PIXYCAM_RAWDATA%1000:pixy_H';
-let PIXY_R='(PIXYCAM_RAWDATA>=5000 && PIXYCAM_RAWDATA<6000)?PIXYCAM_RAWDATA%1000:pixy_R';
-let PIXY_G='(PIXYCAM_RAWDATA>=6000 && PIXYCAM_RAWDATA<7000)?PIXYCAM_RAWDATA%1000:pixy_G';
-let PIXY_B='(PIXYCAM_RAWDATA>=7000)?PIXYCAM_RAWDATA%1000:pixy_B';
-
-
 Blockly.JavaScript['pixycam_rawdata'] = function(block) {
   
     var variable_pixycam_rawdata = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('pixycam'), Blockly.Variables.NAME_TYPE);
@@ -24,49 +15,49 @@ Blockly.JavaScript['pixycam_rawdata'] = function(block) {
 
 Blockly.JavaScript['pixycam_x'] = function(block) {
     
-    var code = PIXY_X;
+    var code = '(PIXYCAM_RAWDATA>=1000 && PIXYCAM_RAWDATA<2000)?PIXYCAM_RAWDATA%1000:pixy_X';
     
     return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['pixycam_y'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = PIXY_Y;
+  var code = '(PIXYCAM_RAWDATA>=2000 && PIXYCAM_RAWDATA<3000)?PIXYCAM_RAWDATA%1000:pixy_Y';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['pixycam_w'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = PIXY_W;
+  var code = '(PIXYCAM_RAWDATA>=3000 && PIXYCAM_RAWDATA<4000)?PIXYCAM_RAWDATA%1000:pixy_W';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['pixycam_tx_h'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = PIXY_H;
+  var code = '(PIXYCAM_RAWDATA>=4000 && PIXYCAM_RAWDATA<5000)?PIXYCAM_RAWDATA%1000:pixy_H';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['pixycam_r'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = PIXY_R;
+  var code = '(PIXYCAM_RAWDATA>=5000 && PIXYCAM_RAWDATA<6000)?PIXYCAM_RAWDATA%1000:pixy_R';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['pixycam_g'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = PIXY_G;
+  var code = '(PIXYCAM_RAWDATA>=6000 && PIXYCAM_RAWDATA<7000)?PIXYCAM_RAWDATA%1000:pixy_G';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['pixycam_b'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = PIXY_B;
+  var code = '(PIXYCAM_RAWDATA>=7000)?PIXYCAM_RAWDATA%1000:pixy_B';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
