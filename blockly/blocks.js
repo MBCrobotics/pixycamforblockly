@@ -15,7 +15,7 @@ Blockly.Blocks['pixycam_new'] = {
 Blockly.Blocks['pixycam_ansys'] = {
   init: function() {
     this.appendValueInput("rawdata")
-      .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
+      .appendField(new Blockly.FieldVariable("pixycam"), "rawdata")
         .setCheck("Number")
         .appendField("資料分析");
     this.setPreviousStatement(true, null);
