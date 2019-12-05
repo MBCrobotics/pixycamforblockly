@@ -12,20 +12,6 @@ Blockly.Blocks['pixycam_new'] = {
     }
 };
 
-Blockly.Blocks['pixycam_ansys'] = {
-  init: function() {
-    this.appendValueInput("rawdata")
-      .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
-      .setCheck("Number")
-      .appendField("pixycam資料分析");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(45);
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
-
 Blockly.Blocks['pixycam_rawdata'] = {
   init: function() {
     this.appendDummyInput()
@@ -41,7 +27,6 @@ Blockly.Blocks['pixycam_rawdata'] = {
 Blockly.Blocks['pixycam_x'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
         .appendField("物件X座標");
     this.setOutput(true, null);
     this.setColour(230);
@@ -53,7 +38,6 @@ Blockly.Blocks['pixycam_x'] = {
 Blockly.Blocks['pixycam_y'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
         .appendField("物件Y座標");
     this.setOutput(true, null);
     this.setColour(230);
@@ -65,7 +49,6 @@ Blockly.Blocks['pixycam_y'] = {
 Blockly.Blocks['pixycam_w'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
         .appendField("物件寬度");
     this.setOutput(true, null);
     this.setColour(230);
@@ -77,7 +60,6 @@ Blockly.Blocks['pixycam_w'] = {
 Blockly.Blocks['pixycam_h'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
         .appendField("物件高度");
     this.setOutput(true, null);
     this.setColour(230);
@@ -89,7 +71,6 @@ Blockly.Blocks['pixycam_h'] = {
 Blockly.Blocks['pixycam_r'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
         .appendField("物件紅色值");
     this.setOutput(true, null);
     this.setColour(230);
@@ -101,7 +82,6 @@ Blockly.Blocks['pixycam_r'] = {
 Blockly.Blocks['pixycam_g'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
         .appendField("物件綠色值");
     this.setOutput(true, null);
     this.setColour(230);
@@ -113,7 +93,6 @@ Blockly.Blocks['pixycam_g'] = {
 Blockly.Blocks['pixycam_b'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
         .appendField("物件藍色值");
     this.setOutput(true, null);
     this.setColour(230);
