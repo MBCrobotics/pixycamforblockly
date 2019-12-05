@@ -31,8 +31,8 @@ Blockly.JavaScript['pixycam_ansys'] = function(block) {
     console.log('start :4 ');
     
     
-    var value_rawdata = 'alert("got something: " + ' + value_uart_data + ');';
-    //var value_rawdata = value_uart_data;
+    //var value_rawdata = 'alert("got something: " + ' + value_uart_data + ');';
+    var value_rawdata = value_uart_data;
     
     console.log('start :5 ');
     console.log('final : ' + value_rawdata + ' : ' + PIXY_X);
