@@ -22,7 +22,7 @@
     </block>
     
 <block type="variables_set">
-        <field name="VAR">PIXYCAM_X</field>
+        <field name="VAR">PIXYCAM_X座標</field>
         <value name="VALUE">
             <block type="pixycam_x">
             </block>
