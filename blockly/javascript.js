@@ -31,7 +31,7 @@ Blockly.JavaScript['pixycam_ansys'] = function(block) {
     console.log('start :4 ');
     var value_rawdata = Blockly.JavaScript.valueToCode(block, 'rawdata', Blockly.JavaScript.ORDER_ATOMIC);
     console.log('start :5 ');
-    //console.log('final : '+value_rawdata + ' : ' + PIXY_X);
+    console.log('final : ' + value_rawdata + ' : ' + PIXY_X);
     if(value_rawdata>=7000){
          PIXY_X=value_rawdata % 1000;
         console.log(PIXY_X);
@@ -53,6 +53,8 @@ Blockly.JavaScript['pixycam_ansys'] = function(block) {
     }else if(value_rawdata>=1000){
          PIXY_B=value_rawdata % 1000;
         console.log(PIXY_B);
+    }else{
+        console.log('final_else : ' + value_rawdata);
     }
     //console.log('final_1 : '+value_rawdata + ' : ' + PIXY_X);
     console.log('start :6 ');
