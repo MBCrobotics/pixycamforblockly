@@ -32,7 +32,7 @@ Blockly.JavaScript['pixycam_ansys'] = function(block) {
     else if(value_rawdata>=1000)
          PIXY_B=value_rawdata % 1000;
 
-    return ;
+    return 0;
 };
 
 Blockly.JavaScript['pixycam_rawdata'] = function(block) {
