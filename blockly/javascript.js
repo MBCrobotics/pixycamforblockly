@@ -16,7 +16,9 @@ let PIXY_B=0;
 
 //https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#
 Blockly.JavaScript['pixycam_ansys'] = function(block) {
+    console.log('start : '+PIXY_X);
    var value_rawdata = Blockly.JavaScript.valueToCode(block, 'rawdata', Blockly.JavaScript.ORDER_ATOMIC);
+    console.log('final : '+value_rawdata + ' : ' + PIXY_X);
     if(value_rawdata>=7000)
          PIXY_X=value_rawdata % 1000;
     else if(value_rawdata>=6000)
@@ -31,9 +33,12 @@ Blockly.JavaScript['pixycam_ansys'] = function(block) {
          PIXY_G=value_rawdata % 1000;
     else if(value_rawdata>=1000)
          PIXY_B=value_rawdata % 1000;
-
+    console.log('final_1 : '+value_rawdata + ' : ' + PIXY_X);
     return  0;
 };
+console.log("Blockly.JavaScript['pixycam_ansys'] : " + Blockly.JavaScript['pixycam_ansys']);
+
+function camansys()
 
 Blockly.JavaScript['pixycam_rawdata'] = function(block) {
   
