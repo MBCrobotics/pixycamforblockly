@@ -38,7 +38,7 @@ Blockly.JavaScript['pixycam_ansys'] = function(block) {
 };
 console.log("Blockly.JavaScript['pixycam_ansys'] : " + Blockly.JavaScript['pixycam_ansys']);
 
-function camansys()
+function camansys(){};
 
 Blockly.JavaScript['pixycam_rawdata'] = function(block) {
   
