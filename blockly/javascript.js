@@ -6,7 +6,7 @@ Blockly.JavaScript['pixycam_new'] = function(block) {
     return [code, Blockly.JavaScript.ORDER_FUNCTION_CALL];
 };
 
-let PIXY_X=0;
+let PIXY_X=100;
 let PIXY_Y=0;
 let PIXY_W=0;
 let PIXY_H=0;
@@ -49,9 +49,9 @@ Blockly.JavaScript['pixycam_x'] = function(block) {
     //console.log('code : ' + code);
     var data=parseInt(code);
     //console.log('data : ' + data);
-    var PIXY_X=0;
-    if(data>=1000 && data<2000){
-        PIXY_X=data%1000;
+    //var PIXY_X=0;
+    //if(data>=1000 && data<2000){
+        //PIXY_X=data%1000;
         //console.log('PIXY_X : ' + PIXY_X);
     }
   // TODO: Change ORDER_NONE to the correct strength.
