@@ -79,7 +79,7 @@ Blockly.JavaScript['pixycam_rawdata'] = function(block) {
 };
 
 Blockly.JavaScript['pixycam_x'] = function(block) {
-    
+    PIXY_X=PIXYCAM_RAWDATA;
     return [PIXY_X, Blockly.JavaScript.ORDER_NONE];
 };
 
