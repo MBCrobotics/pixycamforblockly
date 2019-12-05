@@ -9,9 +9,6 @@
     
     <block type="pixycam_rx">
     </block>
-    
-    <block type="pixycam_ansys">
-    </block>
 
     <block type="variables_set">
         <field name="VAR">PIXYCAM_RAWDATA</field>
