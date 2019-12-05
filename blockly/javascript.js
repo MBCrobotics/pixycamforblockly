@@ -16,7 +16,7 @@ let PIXY_B=0;
 
 //https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#
 Blockly.JavaScript['pixycam_ansys'] = function(block) {
-   var value_rawdata = Blockly.JavaScript.valueToCode(block, 'pixycam', Blockly.JavaScript.ORDER_ATOMIC);
+   var value_rawdata = Blockly.JavaScript.valueToCode(block, 'rawdata', Blockly.JavaScript.ORDER_ATOMIC);
     if(value_rawdata>=7000)
          PIXY_X=value_rawdata % 1000;
     else if(value_rawdata>=6000)
