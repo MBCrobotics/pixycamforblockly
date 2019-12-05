@@ -53,7 +53,7 @@ Blockly.JavaScript['pixycam_x'] = function(block) {
     //if(data>=1000 && data<2000){
         //PIXY_X=data%1000;
         //console.log('PIXY_X : ' + PIXY_X);
-    }
+    //}
   // TODO: Change ORDER_NONE to the correct strength.
   return [PIXY_X , Blockly.JavaScript.ORDER_NONE];
 };
