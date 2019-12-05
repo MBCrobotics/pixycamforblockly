@@ -35,13 +35,10 @@ Blockly.JavaScript['pixycam_ansys'] = function(block) {
     else if(value_rawdata>=1000)
          PIXY_B=value_rawdata % 1000;
     console.log('final_1 : '+value_rawdata + ' : ' + PIXY_X);
-    var value_rawdata = parseJSON(value_rawdata);
-    value_rawdata_test = value_rawdata;
-    console.log('final_2 : '+value_rawdata + ' : ' + PIXY_X);
     return  0;
 };
 
-    console.log('start_2 : '+PIXY_X + ' :value_rawdata :  '+ value_rawdata);
+    console.log('start_2 : '+PIXY_X);
 console.log("Blockly.JavaScript['pixycam_ansys'] : " + Blockly.JavaScript['pixycam_ansys']);
 
 function camansys(){};
