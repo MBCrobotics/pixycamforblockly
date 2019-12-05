@@ -34,7 +34,7 @@ Blockly.JavaScript['pixycam_w'] = function(block) {
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
-Blockly.JavaScript['pixycam_tx_h'] = function(block) {
+Blockly.JavaScript['pixycam_h'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   var code = '(PIXYCAM_RAWDATA>=4000 && PIXYCAM_RAWDATA<5000)?PIXYCAM_RAWDATA%1000:pixy_H';
   // TODO: Change ORDER_NONE to the correct strength.
