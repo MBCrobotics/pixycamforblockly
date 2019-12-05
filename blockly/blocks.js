@@ -12,7 +12,7 @@ Blockly.Blocks['pixycam_new'] = {
     }
 };
 
-Blockly.Blocks['pixycam_data'] = {
+Blockly.Blocks['pixycam_rawdata'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
