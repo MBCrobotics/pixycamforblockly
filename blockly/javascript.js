@@ -18,7 +18,7 @@ let PIXY_B=777;
 Blockly.JavaScript['pixycam_ansys'] = function(block) {
     console.log('start :1 ');
    var variable_pixy = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('rawdata'), Blockly.Variables.NAME_TYPE);
-    console.log('start :pixycam_1 : ' + block.getFieldValue('pixycam'));
+    console.log('start :pixycam_1 : ' + block.getFieldValue('rawdata'));
     console.log('start :pixycam_2 : ' + Blockly.Variables.NAME_TYPE);
     console.log('start :pixycam_3 : ' + variable_pixy);
     console.log('start :2 ');
