@@ -9,7 +9,8 @@
     
     <block type="pixycam_rx">
     </block>
-
+    <block type="pixycam_rawdata">
+    </block>
     
     <block type="variables_set">
       <field name="VAR">PIXY_X</field>
