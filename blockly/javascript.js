@@ -30,7 +30,8 @@ Blockly.JavaScript['pixycam_ansys'] = function(block) {
     var code = variable_pixy + '.ansys(' + value_uart_data + ');\n';
     console.log('start :4 ');
     
-    var value_rawdata = variable_pixy;
+    alert(variable_pixy);
+    var value_rawdata = 'alert("got something: " + ' + variable_pixy + ');';
     
     console.log('start :5 ');
     console.log('final : ' + value_rawdata + ' : ' + PIXY_X);
