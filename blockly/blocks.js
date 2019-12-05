@@ -16,7 +16,7 @@ Blockly.Blocks['pixycam_rawdata'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
-        .appendField("物件資料");
+        .appendField("物件資料分析");
     this.setOutput(true, null);
     this.setColour(230);
  this.setTooltip("");
@@ -118,20 +118,5 @@ Blockly.Blocks['pixycam_rx'] = {
     }
 };
 
-Blockly.Blocks['pixycam_data'] = {
-    init: function() {
-        this.appendDummyInput()
-            .appendField(new Blockly.FieldVariable("pixycam"), "pixycam")
-            .appendField("資料分析")
-            .appendField(new Blockly.FieldDropdown([
-                ["string", "string"]
-            ]), "dataType");
-        this.setPreviousStatement(true, null);
-        this.setNextStatement(true, null);
-        this.setColour(75);
-        this.setTooltip("");
-        this.setHelpUrl("");
-    }
-};
 
 
