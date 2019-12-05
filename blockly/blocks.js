@@ -12,6 +12,18 @@ Blockly.Blocks['pixycam_new'] = {
     }
 };
 
+Blockly.Blocks['pixycam_ansys'] = {
+  init: function() {
+    this.appendValueInput("rawdata")
+        .setCheck("Number")
+        .appendField("pixycam資料分析");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(45);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
 
 Blockly.Blocks['pixycam_rawdata'] = {
   init: function() {
