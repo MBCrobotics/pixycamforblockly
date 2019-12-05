@@ -12,14 +12,22 @@
     
     <block type="pixycam_ansys">
     </block>
-    
-    <block type="pixycam_rawdata">
+
+    <block type="variables_set">
+        <field name="VAR">PIXYCAM_RAWDATA</field>
+        <value name="VALUE">
+            <block type="pixycam_rawdata">
+            </block>
+        </value>
     </block>
     
-
+<block type="variables_set">
+        <field name="VAR">PIXYCAM_X</field>
+        <value name="VALUE">
             <block type="pixycam_x">
             </block>
-
+        </value>
+    </block>
 
             <block type="pixycam_y">
             </block>
