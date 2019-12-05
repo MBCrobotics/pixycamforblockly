@@ -11,9 +11,9 @@
     </block>
     
     <block type="variables_set">
-      <field name="VAR">PIXY_DATA</field>
+      <field name="VAR">PIXY_RAWDATA</field>
         <value name="VALUE">
-            <block type="pixycam_data">
+            <block type="pixycam_rawdata">
             </block>
         </value>
     </block>
