@@ -24,6 +24,7 @@ Blockly.Blocks['pixycam_rawdata'] = {
   }
 };
 
+
 Blockly.Blocks['pixycam_x'] = {
   init: function() {
     this.appendDummyInput()
