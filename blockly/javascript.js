@@ -42,7 +42,7 @@ Blockly.JavaScript['pixycam_rawdata'] = function(block) {
   return [code , Blockly.JavaScript.ORDER_NONE];
 };
 
-Blockly.JavaScript['pixycam_x'] = PIXY_X;
+Blockly.JavaScript['pixycam_x'] = [PIXY_X, Blockly.JavaScript.ORDER_NONE];
 
 Blockly.JavaScript['pixycam_y'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
