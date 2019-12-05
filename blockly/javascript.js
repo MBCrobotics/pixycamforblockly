@@ -17,11 +17,12 @@ let PIXY_B=777;
 //https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#
 Blockly.JavaScript['pixycam_ansys'] = function(block) {
     console.log('start :1 ');
-   var variable_pixy = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('rawdata'), Blockly.Variables.NAME_TYPE);
-    console.log('start :pixycam_1 : ' + block.getFieldValue('rawdata'));
-    console.log('start :pixycam_2 : ' + Blockly.Variables.NAME_TYPE);
-    console.log('start :pixycam_3 : ' + variable_pixy);
-    console.log('start :2 ');
+   //var variable_pixy = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('rawdata'), Blockly.Variables.NAME_TYPE);
+    var variable_pixy = 'pixycam';
+    //console.log('start :pixycam_1 : ' + block.getFieldValue('rawdata'));
+    //console.log('start :pixycam_2 : ' + Blockly.Variables.NAME_TYPE);
+    //console.log('start :pixycam_3 : ' + variable_pixy);
+    //console.log('start :2 ');
     var value_uart_data = Blockly.JavaScript.valueToCode(block, 'rawdata', Blockly.JavaScript.ORDER_ATOMIC);
     console.log('start :rawdata_1 : ' + block);
     console.log('start :rawdata_2 : ' + 'rawdata');
