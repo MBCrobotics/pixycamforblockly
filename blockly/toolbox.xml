@@ -16,53 +16,31 @@
     <block type="pixycam_rawdata">
     </block>
     
-    <block type="variables_set">
-      <field name="VAR">PIXY_X</field>
-        <value name="VALUE">
+
             <block type="pixycam_x">
             </block>
-        </value>
-    </block>
-    
-    <block type="variables_set">
-      <field name="VAR">PIXY_Y</field>
-        <value name="VALUE">
+
+
             <block type="pixycam_y">
             </block>
-        </value>
-    </block>
-    
-    <block type="variables_set">
-      <field name="VAR">PIXY_W</field>
-        <value name="VALUE">
+
+
             <block type="pixycam_w">
             </block>
-        </value>
-    </block>
-    
-    <block type="variables_set">
-      <field name="VAR">PIXY_H</field>
-        <value name="VALUE">
+
+
             <block type="pixycam_h">
             </block>
-        </value>
-    </block>
-    
-    <block type="variables_set">
-      <field name="VAR">PIXY_R</field>
-        <value name="VALUE">
+
+
             <block type="pixycam_r">
             </block>
-        </value>
-    </block>
+
     
-    <block type="variables_set">
-      <field name="VAR">PIXY_G</field>
-        <value name="VALUE">
+
             <block type="pixycam_g">
             </block>
-        </value>
-    </block>
+
     
     <block type="variables_set">
       <field name="VAR">PIXY_B</field>
